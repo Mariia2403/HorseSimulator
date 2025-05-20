@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\horse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|solutionrelative:horse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|d:\\visual studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|d:\\visual studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\wpfapp1\\horseanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|solutionrelative:horseanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|d:\\visual studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\wpfapp1\\racemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|solutionrelative:racemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|d:\\visual studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2F56BEA9-80C4-4A9B-A07F-025327AFC459}|WpfApp1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,19 +39,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HorseAnimator.cs",
+              "DocumentMoniker": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\HorseAnimator.cs",
+              "RelativeDocumentMoniker": "HorseAnimator.cs",
+              "ToolTip": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\HorseAnimator.cs",
+              "RelativeToolTip": "HorseAnimator.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T15:58:40.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RaceManager.cs",
+              "DocumentMoniker": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\RaceManager.cs",
+              "RelativeDocumentMoniker": "RaceManager.cs",
+              "ToolTip": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\RaceManager.cs",
+              "RelativeToolTip": "RaceManager.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwFkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T13:49:14.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Horse.cs",
               "DocumentMoniker": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\Horse.cs",
               "RelativeDocumentMoniker": "Horse.cs",
               "ToolTip": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\Horse.cs",
               "RelativeToolTip": "Horse.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowC0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T16:19:42.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -55,13 +89,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\Visual Studio (2)\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F \u043B\u0430\u0431\u0438\\5 lab\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwCAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwCIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T15:49:45.172Z",
               "EditorCaption": ""

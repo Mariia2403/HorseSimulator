@@ -27,6 +27,8 @@
                 
                />
 
+        <Canvas Grid.Row="0" x:Name="RaceCanvas" Width="450" Height="250"/>
+
         <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Bottom" Margin="0">
 
             <Button Content="→ Next Horse"
@@ -43,6 +45,7 @@
           Height="30"
           SelectedIndex="1">
                 <!-- 5 коней за замовчуванням -->
+                <ComboBoxItem Content="2"/>
                 <ComboBoxItem Content="3"/>
                 <ComboBoxItem Content="5"/>
                 <ComboBoxItem Content="7"/>
