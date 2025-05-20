@@ -1,0 +1,92 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <Image Grid.Column="0" Source="/images/Background/Track.png"
+                Stretch="Fill"
+                Width="450" 
+               Margin= "30 40 "
+               HorizontalAlignment="Center"
+                
+               />
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Bottom" Margin="0">
+
+            <Button Content="→ Next Horse"
+                    Width="120"
+                    Height="30" 
+                    Margin="10 0"
+                    Click="NextHorse_Click"/>
+            <TextBlock Text="Number of horses:"
+               VerticalAlignment="Center"
+               Margin="20 0"/>
+
+            <ComboBox x:Name="horseCountComboBox"
+          Width="120"
+          Height="30"
+          SelectedIndex="1">
+                <!-- 5 коней за замовчуванням -->
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="10"/>
+            </ComboBox>
+            <Button 
+            Content="Start"
+            Width="90" Height="30"
+            Click="Start_Click"
+                Margin=" 40 0"
+            />
+
+
+
+        </StackPanel>
+
+
+
+
+
+        <DataGrid  x:Name="rankingGrid"
+                   AutoGenerateColumns="False"
+                   Grid.Row="1"
+                   IsReadOnly="True"
+                   CanUserAddRows="False"
+                   Height="112"
+                   Width="400"
+                   Margin="0 10"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Color" Binding="{Binding Color}" Width="*"/>
+                <DataGridTextColumn Header="Posicion" Binding="{Binding Position}" Width="*"/>
+                <DataGridTextColumn Header="Time" Binding="{Binding RaceTime}" Width="*"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+
+
+
+
+
+    </Grid>
+</Window>
