@@ -13,3 +13,6 @@ D:\Visual Studio (2)\2 курс\2 семестр\ооп лаби\5 lab\WpfApp1\o
 D:\Visual Studio (2)\2 курс\2 семестр\ооп лаби\5 lab\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 D:\Visual Studio (2)\2 курс\2 семестр\ооп лаби\5 lab\WpfApp1\obj\Debug\WpfApp1.exe
 D:\Visual Studio (2)\2 курс\2 семестр\ооп лаби\5 lab\WpfApp1\obj\Debug\WpfApp1.pdb
+D:\Visual Studio (2)\2 курс\2 семестр\ооп лаби\5 lab\WpfApp1\bin\Debug\WriteableBitmapEx.Wpf.dll
+D:\Visual Studio (2)\2 курс\2 семестр\ооп лаби\5 lab\WpfApp1\bin\Debug\WriteableBitmapEx.Wpf.xml
+D:\Visual Studio (2)\2 курс\2 семестр\ооп лаби\5 lab\WpfApp1\obj\Debug\WpfApp1.csproj.Up2Date
