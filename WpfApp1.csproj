@@ -59,6 +59,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="HorseAnimator.cs" />
+    <Compile Include="HorseInfo.cs" />
+    <Compile Include="MainViewModel.cs" />
     <Compile Include="RaceManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

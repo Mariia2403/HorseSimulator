@@ -8,6 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Input;
+using System.Diagnostics;
 
 
 namespace WpfApp1
@@ -24,9 +25,18 @@ namespace WpfApp1
         private int frameIndex = 0;//номер поточного кадру для анімації коней.
 
         private Random rnd = new Random();
-        public RaceManager(Canvas canvas, int horseCount)
+
+        private MainViewModel viewModel;
+        private Stopwatch stopwatch = new Stopwatch();
+        private const double FinishLine = 410;
+
+
+        //public double StartPositionX { get; set; }//змінити позиці. x
+        public RaceManager(Canvas canvas, int horseCount, MainViewModel vm)
         {
             raceCanvas = canvas;
+            viewModel = vm;
+            stopwatch.Start();
             CreateHorses(horseCount);
             barrier = new Barrier(horseCount + 1); // +1 для Render
         }
@@ -51,15 +61,25 @@ namespace WpfApp1
 
                 Image img = new Image
                 {
-                    Width = 50,
-                    Height = 50,
+                    Width = 80,
+                    Height = 80,
                     Source = horseFrames[0]
                 };
-
+                //int startPosition = 10;
                 Canvas.SetLeft(img, 0);
-                Canvas.SetTop(img, i * 60);
+               // Canvas.SetTop(img, i * 40);
+                Canvas.SetBottom(img, i * 40);
                 raceCanvas.Children.Add(img);
                 horseImages[horse] = img;
+
+                viewModel.Horses.Add(new HorseInfo
+                {
+                    Name = horse.Name,
+                    ColorBrush = new SolidColorBrush(color),
+                    Position = horse.PositionX,
+                    TimeRunning = 0
+                });
+
             }
         }
 
@@ -80,7 +100,9 @@ namespace WpfApp1
                 {
                     foreach (var horse in horses)
                     {
-                        var img = horseImages[horse];
+                        viewModel.UpdateHorseInfo(horse.Name, horse.PositionX, stopwatch.Elapsed.TotalSeconds); 
+
+                        Image img = horseImages[horse];
                         var frames = horseAnimations[horse];
 
                         Canvas.SetLeft(img, horse.PositionX);
@@ -90,10 +112,57 @@ namespace WpfApp1
                     frameIndex = (frameIndex + 1) % 12;
                 });
 
-                running = horses.Any(h => h.PositionX < 400); // траса
+                // перевіряємо, чи хтось фінішував
+                var winner = horses.FirstOrDefault(h => h.PositionX >= FinishLine);
+
+                if (winner != null)
+                {
+                    running = false;
+
+                    Application.Current.Dispatcher.Invoke(() =>
+                    {
+                        MessageBox.Show($"{winner.Name} виграв гонку за {stopwatch.Elapsed.TotalSeconds:F2} секунд!", "Фініш ");
+                        // Повертаємо всіх коней на початок
+                        foreach (var horse in horses)
+                        {
+                            horse.PositionX = 0;
+                            var img = horseImages[horse];
+                            Canvas.SetLeft(img, 0);
+                        }
+
+                        frameIndex = 0; // обнуляємо кадри
+                    });
+
+                    break;
+                }
+
                 await Task.Delay(100);
             }
         }
+
+        public void ResetRace()
+        {
+            foreach (var horse in horses)
+            {
+                horse.ResetForNewRace(rnd);
+
+                // оновити в таблиці
+                var info = viewModel.Horses.FirstOrDefault(h => h.Name == horse.Name);
+                if (info != null)
+                {
+                    info.Position = 0;
+                    info.TimeRunning = 0;
+                }
+
+                // пересунути зображення назад
+                var img = horseImages[horse];
+                Canvas.SetLeft(img, 0);
+            }
+
+            frameIndex = 0;
+            stopwatch.Restart();
+        }
+
 
         public void StartRace()
         {

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="550">
+        Title="MainWindow" Height="800" Width="550">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -21,35 +21,33 @@
 
         <Image Grid.Column="0" Source="/images/Background/Track.png"
                 Stretch="Fill"
-                Width="450" 
+                Width="500" 
+               Height="500"
                Margin= "30 40 "
                HorizontalAlignment="Center"
                 
                />
 
-        <Canvas Grid.Row="0" x:Name="RaceCanvas" Width="450" Height="250"/>
+        <Canvas Grid.Row="0" x:Name="RaceCanvas" Width="500" Height="400"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Bottom" Margin="0">
 
-            <Button Content="→ Next Horse"
-                    Width="120"
-                    Height="30" 
-                    Margin="10 0"
-                    Click="NextHorse_Click"/>
+           
             <TextBlock Text="Number of horses:"
                VerticalAlignment="Center"
                Margin="20 0"/>
 
             <ComboBox x:Name="horseCountComboBox"
+                      SelectionChanged="horseCountComboBox_SelectionChanged"
           Width="120"
           Height="30"
           SelectedIndex="1">
                 <!-- 5 коней за замовчуванням -->
                 <ComboBoxItem Content="2"/>
                 <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
                 <ComboBoxItem Content="5"/>
-                <ComboBoxItem Content="7"/>
-                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="6"/>
             </ComboBox>
             <Button 
             Content="Start"
@@ -66,7 +64,8 @@
 
 
 
-        <DataGrid  x:Name="rankingGrid"
+        <DataGrid  x:Name="HorseInfoGrid"
+                   ItemsSource="{Binding Horses}"
                    AutoGenerateColumns="False"
                    Grid.Row="1"
                    IsReadOnly="True"
@@ -79,9 +78,15 @@
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
-                <DataGridTextColumn Header="Color" Binding="{Binding Color}" Width="*"/>
+                <DataGridTemplateColumn Header="ColorName">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Rectangle Width="20" Height="20" Fill="{Binding ColorBrush}" Stroke="Black" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Posicion" Binding="{Binding Position}" Width="*"/>
-                <DataGridTextColumn Header="Time" Binding="{Binding RaceTime}" Width="*"/>
+                <DataGridTextColumn Header="Time" Binding="{Binding TimeRunning}" Width="*"/>
             </DataGrid.Columns>
 
         </DataGrid>

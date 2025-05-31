@@ -32,12 +32,18 @@ namespace WpfApp1
 
         public async Task RunAsync(Barrier barrier)
         {
-            while (PositionX < 400)
+            while (PositionX < 410)
             {
                 ChangeAcceleration();
                 barrier.SignalAndWait();//!!!!
                 await Task.Delay(10);//!!!!!
             }
+        }
+        public void ResetForNewRace(Random rnd)
+        {
+            PositionX = 0;
+            Speed = rnd.Next(5, 11);
+            Acceleration = Speed * rnd.NextDouble() * 0.3 + 0.7; // Наприклад 0.7–1.0 множник
         }
         private void ChangeAcceleration()
         {
